@@ -454,3 +454,39 @@ int main(){
         return 0;
     }
 */
+
+ //                               Arithmetic practice
+//                                             Q1. Calculator 🧮
+
+// Do variables banao:
+
+// int num1 = 25;
+// int num2 = 10;
+
+// Calculate karke print karo:
+
+// Addition
+// Subtraction
+// Multiplication
+// Division
+// Remainder (%)
+#include <iostream>
+
+int main(){
+
+    int num1 = 25;
+    int num2 = 10;
+    int addition = num1+num2;
+    int subtraction = num1-num2;
+    int multiplication = num1*num2;
+    int  division = num1/10.0;
+    int remainder = num1%num2;
+
+    std::cout << "Addtition: "<< addition << std::endl;
+    std::cout << "subtraction: "<< subtraction << std::endl;
+    std::cout << "Multiplication: "<< multiplication << std::endl;
+    std::cout << "Division: "<< double(num2),division; //<< std::endl;
+    std::cout << "Remainder: "<< remainder << std::endl; 
+
+    return 0;
+}
