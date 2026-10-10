@@ -557,6 +557,7 @@ std::cout << "Perimeter: "<< perimeter << std::endl;
 }
 */
 
+/*
 //                                            Q7. Shopping Bill
 // Ek customer ne purchase kiya:
 
@@ -606,5 +607,42 @@ int main (){
     std::cout << "Tax: "<< total_tax<< " PKR" << std::endl;
     std::cout << "Final Bill: "<< final_bill << " PKR"<<std::endl;
     
+    return 0;
+}
+    */
+
+             //                               Q7.Student Marks Calculator 🎓
+
+// Ek student ke marks:
+// int computer = 85;
+// int mathematics = 78;
+// int physics = 92;
+// int english = 75;
+// int pakistan_studies = 80;
+// Total marks 500 hain.
+// Calculate karo:
+// Obtained marks
+// Total marks
+// Percentage
+// Formula:
+// $$ \text{Percentage} = \frac{\text{Obtained Marks}}{\text{Total Marks}} \times 100 $$
+
+#include <iostream>
+
+int main (){
+    int computer = 85;
+    int mathematics = 78;
+    int physics = 92;
+    int english = 75;
+    int pakistan_studies = 80;
+
+   const int total_marks = 500;
+    double obtain_marks = computer+mathematics+physics+ english +pakistan_studies;
+    double percentage = (obtain_marks / total_marks) * 100;
+
+    std::cout << "Obtained Marks: " << obtain_marks << std::endl;
+    std::cout << "Total Marks: "<< total_marks << std::endl;
+    std::cout << "Percentage: " << percentage << " %" << std::endl;
+
     return 0;
 }
