@@ -688,6 +688,7 @@ int main (){
 }
     */
 
+    /*
 //                                                     Question 2: Simple Calculator 🧮
 
 // Ab ek calculator banao jo user se do numbers input le aur unke:
@@ -720,4 +721,119 @@ int main(){
     std::cout << "Multiplication: "<< multiplication << std::endl;
     std::cout << "Division: " << division<<std::endl;
 
+}
+    */
+
+    /*
+//                                          Q2.  Rectangle Calculator 📐
+
+// Now write a program that asks the user to enter the length and width of a rectangle.
+
+// Requirements
+// Ask for the length.
+// Ask for the width.
+// Calculate the area.
+// Calculate the perimeter.
+// Display both results.
+
+// Formulas:
+
+// area = Length × Width
+// perimeter = 2 × (Length + Width)
+
+#include <iostream>
+
+int main (){
+    double x;
+    double y;
+    double area;
+    double perimeter;
+
+    std::cout << "Enter rectangle Length: ";
+    std::cin>>x;
+
+    std::cout << "Enter rectangle Width: ";
+    std::cin>>y;
+
+    area = x* y;
+    perimeter = 2 * (x+y);
+
+    std::cout << "Area: "<<area << std::endl;
+    std::cout << "Perimeter: "<<perimeter << std::endl;
+
+    return 0;
+}
+*/
+
+
+
+//4: Shopping Bill Calculator — User Input
+
+// Ab program ko aisa banao ke user khud prices aur quantities enter kare, aur program automatically total bill calculate kare.
+
+// Program user se ye 6 cheezein pooche:
+
+// Keyboard ki price
+// Keyboard ki quantity
+// Mouse ki price
+// Mouse ki quantity
+// Headphones ki price
+// Headphones ki quantity
+
+// Phir program automatically calculate kare:
+
+// Har item ka total
+// Subtotal
+// 5% tax
+// Final bill
+
+// Tumhare rules
+// Prices ke liye double use karo.
+// Quantities ke liye int use karo.
+// Input ke liye std::cin use karo.
+#include <iostream>
+
+int main (){
+    const int tax = 5;
+    double price1;
+    double price2;
+    double price3;
+    int quantity1;
+    int quantity2;
+    int quantity3;
+
+    std::cout << "Keyboard Price: ";
+    std::cin>>price1;
+
+    std::cout << "Keyboard Quantity: ";
+    std::cin>>quantity1;
+
+    std::cout << "Mouse price: ";
+    std::cin>>price2;
+
+    std::cout << "Mouse Quantity: ";
+    std::cin>>quantity2;
+
+    std::cout << "Headphones price: ";
+    std::cin>>price3;
+
+    std::cout << "Headphone Quantity: ";
+    std::cin>>quantity3;
+    std::cout << std::endl;
+    
+    double total_price = price1*quantity1+price2*quantity2+price3*quantity3;
+   // int total_quatity = quantity1 + quantity2 + quantity3;
+    double subtotal = total_price * 1;//total_quatity;
+    double total_tax = subtotal *tax /100;
+    double final_bill = subtotal + total_tax;
+
+    std::cout << "- - - - - - Shopping Bill - - - - - - "<< std::endl;
+    std::cout << '\n';
+    std::cout << "Total price: "<< total_price << " PKR" <<std::endl;
+ //   std::cout << "Total Quantity: "<< total_quatity << " PKR" <<std::endl;
+    std::cout << "Total Subtotal: "<< subtotal<< " PKR" <<std::endl;
+    std::cout  << "Total tax: "<< total_tax << " PKR" <<std::endl;
+    std::cout << "Final Bill: "<< final_bill << " PKR" <<std::endl;
+    
+    return 0;
 }
