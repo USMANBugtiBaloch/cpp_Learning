@@ -611,6 +611,7 @@ int main (){
 }
     */
 
+    /*
              //                               Q7.Student Marks Calculator 🎓
 
 // Ek student ke marks:
@@ -645,4 +646,78 @@ int main (){
     std::cout << "Percentage: " << percentage << " %" << std::endl;
 
     return 0;
+}
+*/
+/*
+//                                  USER INPUT basics QUESTIon
+ //                                                       Question 1 — Personal Information 👨‍💻
+
+// Ek program banao jo user se ye information input le:
+// Name
+// Age
+// University name
+// Current semester
+#include <iostream>
+
+int main (){
+
+    std::string name;
+    int age;
+    std::string university_name;
+    int current_semester;
+
+    std::cout << "What is you  Name? ";
+    std::cin>> name;
+
+    std::cout << "What is your age ? ";
+    std::cin>>age;
+
+    std::cout<< "University Name? ";
+    std::getline(std::cin>> std::ws , university_name);
+
+    std::cout << "Current semester: ";
+    std::cin>>current_semester;
+
+    std::cout << "- - - - - - Studnet information - - - - - - -"<<std::endl;;
+    std::cout<< "Your Name is " << name << "." <<std::endl;
+    std::cout << "Your are "<< age << " years old. "<<std::endl;
+    std::cout << "University: "<< university_name << "." << std::endl;
+    std::cout << "Current Semeter: "<< current_semester << std::endl;
+
+    return 0 ;
+}
+    */
+
+//                                                     Question 2: Simple Calculator 🧮
+
+// Ab ek calculator banao jo user se do numbers input le aur unke:
+
+// Addition
+// Subtraction
+// Multiplication
+// Division
+// calculate karke print kare.
+
+#include <iostream>
+
+int main(){
+    int a;
+    int b;
+
+    std::cout<< "Enter Your 1st number: ";
+    std::cin>>a;
+
+    std::cout <<"Enter Your 2nd number: ";
+    std::cin>>b;
+
+    int addition = a+b;
+    int substraction = a-b;
+    int multiplication = a*b;
+    double division = (static_cast<double>(a)/b);
+  
+    std::cout<< "Addition: "<< addition << std::endl;
+    std::cout << "Subtraction: "<< substraction << std::endl;
+    std::cout << "Multiplication: "<< multiplication << std::endl;
+    std::cout << "Division: " << division<<std::endl;
+
 }
