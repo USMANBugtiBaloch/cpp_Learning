@@ -455,6 +455,7 @@ int main(){
     }
 */
 
+
  //                               Arithmetic practice
 //                                             Q1. Calculator 🧮
 
@@ -470,6 +471,8 @@ int main(){
 // Multiplication
 // Division
 // Remainder (%)
+
+/*
 #include <iostream>
 
 int main(){
@@ -479,14 +482,129 @@ int main(){
     int addition = num1+num2;
     int subtraction = num1-num2;
     int multiplication = num1*num2;
-    int  division = num1/10.0;
+    int division = num1/num2;
     int remainder = num1%num2;
 
     std::cout << "Addtition: "<< addition << std::endl;
     std::cout << "subtraction: "<< subtraction << std::endl;
     std::cout << "Multiplication: "<< multiplication << std::endl;
-    std::cout << "Division: "<< double(num2),division; //<< std::endl;
+    std::cout << "Division: "<< division << std::endl;
     std::cout << "Remainder: "<< remainder << std::endl; 
 
+    return 0;
+}
+*/
+
+/*
+//                                         Question 2 — Celsius to Fahrenheit
+
+// Ab khud ek program banao jo Celsius ko Fahrenheit mein convert kare.
+
+// Requirements:
+
+// double celsius = 37;
+// Formula: F = (C × 9 / 5) + 32
+// Fahrenheit ka result 98.6 aana chahiye.
+// int aur double ka sahi use karna hai.
+
+// Hint: Formula mein 9 / 5 ko dhyan se handle karna—integer division ka issue ho sakta hai.
+
+#include <iostream>
+
+typedef int i;
+typedef double d;
+
+int main (){
+
+    d celsius = 37;
+    i offset = 32;
+    d fahrenheit  = (celsius *9.0 /5 )+ offset;
+
+    std::cout << "Celsius: "<< celsius << std::endl;
+    std::cout << "Fahrenheit: " << fahrenheit << std::endl;
+   
+}
+    */
+
+/*
+       //                                             Q3.  Rectangle Calculator 📐
+
+// Ab ye program khud banao:
+// double length = 12.5;
+// double width = 4.0;
+// Area calculate karo: length * width
+// Perimeter calculate karo: 2 * (length + width)
+// Dono results print karo.
+
+// Expected output:
+
+// Area: 50
+// Perimeter: 33
+
+#include <iostream>
+
+int main (){
+
+double length = 12.5;
+double width =4.0;
+double area = length * width;
+double perimeter = 2 * (length + width);
+
+std::cout << "Area: "<< area << std::endl;
+std::cout << "Perimeter: "<< perimeter << std::endl;
+
+        return 0;
+}
+*/
+
+//                                            Q7. Shopping Bill
+// Ek customer ne purchase kiya:
+
+// Item	Price	Quantity
+// Keyboard	2500.50	2
+// Mouse	1200.75	1
+// Headphones	3500.00	1
+
+// Program calculate kare:
+
+// Har item ka total
+// Subtotal
+// 5% tax
+// Final bill
+
+#include <iostream>
+
+int main (){
+    std::string item1 = "Keyboard";
+    std::string item2 = "Mouse";
+    std::string item3 = "Headphones";
+
+    const double tax = 5; 
+
+    double price1 = 2500.50;
+    double price2 = 1200.75;
+    double price3 = 3500.00;
+
+    int quantity1 = 2;
+    int quantity2 = 1;
+    int quantity3 = 1;
+
+    double total_item1 = quantity1*price1;
+    double total_item2 = quantity2*price2;
+    double total_item3 = quantity3*price3;
+
+    double subtotal = total_item1+total_item2+total_item3;
+    double total_tax = subtotal*tax/100.00;
+
+    double final_bill = subtotal +total_tax;
+
+
+    std::cout << "Keyboard Total: "<< total_item1 << " PKR" << std::endl;
+    std::cout << "Mouse Total: "<< total_item2 << " PKR" << std::endl;
+    std::cout << "Headphones Total: "<< total_item3 << " PKR"<< std::endl;
+    std::cout << "Subtotal: "<< subtotal << " PKR"<< std::endl;
+    std::cout << "Tax: "<< total_tax<< " PKR" << std::endl;
+    std::cout << "Final Bill: "<< final_bill << " PKR"<<std::endl;
+    
     return 0;
 }
