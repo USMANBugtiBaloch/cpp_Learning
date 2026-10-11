@@ -1040,6 +1040,8 @@ int main (){
 }
 */
 
+/*
+
 //  //   else- if               Q2.         Student Grade Calculator
 // Bro, ab hum ek university result system banayenge. Is baar else if ki practice hogi.
 // Requirements
@@ -1052,6 +1054,7 @@ int main (){
 // 50–59	Grade E
 // 0–49	Fail
 // 0 se kam ya 100 se zyada	Invalid marks
+
 #include <iostream>
 
 int main(){
@@ -1082,5 +1085,46 @@ int main(){
         std::cout << "Fail ";
     }
 
+    return 0;
+}
+    */
+//                     Q3. ATM Withdrawal System 🏧
+// Bro, now let's apply if, else if, else, and || to a real-life situation.
+// Your task: Create an ATM withdrawal program in C++.
+// Requirements
+// 1. Set the initial account balance to 50000.0.
+// 2. Ask the user how much money they want to withdraw.
+// 3. If the withdrawal amount is 0 or negative, print "Invalid withdrawal amount".
+// 4. If the withdrawal amount is greater than the balance, print "Insufficient balance".
+// 5. Otherwise:
+//    - Print "Withdrawal successful!"
+//    - Display the remaining balance.
+
+#include <iostream>
+
+int main (){    
+    
+    double account_balance = 50000.0;
+    double withdrawal;
+    
+    
+    std::cout << "Account Balance: "<< account_balance <<std::endl;
+    std::cout << "Enter wtihdrawal ammout: ";
+    std::cin>>withdrawal;
+
+
+    if(withdrawal <=0){
+        std::cout << "Invalid withdrawal amount. ";
+    }
+   else if(withdrawal > account_balance){
+        std::cout << "Insufficient balace. ";
+    }
+    else {
+        account_balance = account_balance - withdrawal;
+        std::cout << "Withdrawal successful! " <<std::endl;
+        std::cout << "Remaining Balance "<< account_balance <<std::endl;
+        std::cout << "Thanks ";
+    }
+    
     return 0;
 }
