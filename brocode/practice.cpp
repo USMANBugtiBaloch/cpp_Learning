@@ -930,6 +930,7 @@ int main (){
     return 0;
 }
     */
+   /*
    
 //                               Question 3: Rounding Calculator 🔢
 // Ab hum teen useful math functions practice karenge:
@@ -954,6 +955,132 @@ int main(){
     std::cout << "Round OFF: "<<round_off<<std::endl;
     std::cout << "Round Down: "<< round_down<<std::endl;
     std::cout << "Round UP: "<< round_up<<std::endl;
+
+    return 0;
+}
+    */
+   /*
+ //                                   4Question: Hypotenuse Calculator
+// Right-angle triangle ki do sides user se input lo aur hypotenuse calculate karo.
+// 1. Formula samjho
+// Pythagorean theorem ke mutabiq:
+// \[
+// c=\sqrt{a^2+b^2}
+// \]
+// - a = Pehli side
+// - b = Doosri side
+// - c = Hypotenuse (right angle ke opposite wali sabse lambi side)
+
+#include <iostream>
+#include <cmath>
+
+int main (){
+    double x;
+    double y;
+    double c;
+
+    std::cout<< "Enter Side A: ";
+    std::cin>>x;
+    std::cout << "Enter Side B: ";
+    std::cin>>y;
+    
+  // x = pow(x,2);
+  //  y = pow(y,2);
+    c = sqrt(pow(x,2)+pow(y,2));
+
+    std::cout << "Hypotenuse: "<< c << std::endl;
+
+    return 0;
+}
+    */
+   /*
+//     if-else                 if statement       Q1  University Voting Eligibility Checker
+// Scenario: Tum University of Balochistan mein ek software develop kar rahe ho jo check karega ke student university election mein vote de sakta hai ya nahi.
+// Requirements
+// 1. User se age input lo.
+// 2. User se poochho ke uske paas valid student ID hai ya nahi.
+// 3. Student tab vote de sakta hai jab:
+//    - Age 18 ya usse zyada ho.
+//    - Valid student ID bhi ho.
+// 4. Agar dono conditions poori hon, print karo You are eligible to vote!
+// 5. Warna print karo You are not eligible to vote!
+
+#include <iostream>
+int main (){
+    int age;
+    int student_id;
+
+    std::cout << "Are you a studnet (1 = yes, 0 = N0): ";
+    std::cin>>student_id;
+    std::cout<< "ENter your age: ";
+    std::cin>>age;
+
+
+    if (age >=18 && student_id ==1){
+        std::cout << "You can vote! ";
+    }
+    else {
+        std::cout << "You cannot vote ";
+    }
+    // if(student_id == 1 && age >= 18){
+    //     std::cout << "your can vote! ";
+    // }
+    // else if (student_id == 1 && age < 18){
+    //     std::cout << "You cannot vote! ";
+    // }
+    // else if (student_id == 0 && age >= 18){
+    //     std::cout <<"you can't vote! ";
+    // }
+    // else if (student_id == 0 && age < 18){
+    //     std::cout << "you are not eligible for vote! ";
+    // }
+
+
+    return 0;
+}
+*/
+
+//  //   else- if               Q2.         Student Grade Calculator
+// Bro, ab hum ek university result system banayenge. Is baar else if ki practice hogi.
+// Requirements
+// User se marks input lo aur grade calculate karo:
+// Marks	Result
+// 90–100	Grade A
+// 80–89	Grade B
+// 70–79	Grade C
+// 60–69	Grade D
+// 50–59	Grade E
+// 0–49	Fail
+// 0 se kam ya 100 se zyada	Invalid marks
+#include <iostream>
+
+int main(){
+    int marks;
+
+    std::cout << "Enter Your Marks: ";
+    std::cin>>marks;
+
+    if (marks>100 || marks < 0){
+        std::cout << "Invalid marks ";
+    }
+    else if(marks>=90 && marks <=100 ){
+        std::cout << "Grade A ";
+    }
+    else if (marks>=80 && marks<90){
+        std::cout << "Grade B ";
+    }
+    else if(marks>=70 && marks<80){
+        std::cout << "Grade C ";
+    }
+    else if(marks>=60 && marks<70){
+        std::cout << "Grade D ";
+    }
+    else if (marks>=50 && marks<60){
+        std::cout << "Grade E ";
+    }
+    else {
+        std::cout << "Fail ";
+    }
 
     return 0;
 }
