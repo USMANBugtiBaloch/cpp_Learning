@@ -11,7 +11,7 @@ I'm a **BS Computer Science student** learning C++ from the basics and improving
 * [x] Variables and data types
 * [x] Strings
 * [x] Namespaces
-* [ ] User input (`cin`)
+* [x] User input (`cin`)
 * [ ] Conditional statements (`if`, `else`)
 * [ ] Loops (`for`, `while`)
 * [ ] Functions
