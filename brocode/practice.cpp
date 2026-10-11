@@ -1088,6 +1088,8 @@ int main(){
     return 0;
 }
     */
+
+    /*
 //                     Q3. ATM Withdrawal System 🏧
 // Bro, now let's apply if, else if, else, and || to a real-life situation.
 // Your task: Create an ATM withdrawal program in C++.
@@ -1106,12 +1108,10 @@ int main (){
     
     double account_balance = 50000.0;
     double withdrawal;
-    
-    
+
     std::cout << "Account Balance: "<< account_balance <<std::endl;
     std::cout << "Enter wtihdrawal ammout: ";
     std::cin>>withdrawal;
-
 
     if(withdrawal <=0){
         std::cout << "Invalid withdrawal amount. ";
@@ -1126,5 +1126,71 @@ int main (){
         std::cout << "Thanks ";
     }
     
+ return 0;
+}
+ */
+
+ /*
+//                                             Q4. Login System
+// User se username aur password lo.
+// Practice ke liye:
+//  Username: admin
+// - Password: 1234
+// Dono correct hon to Login successful; warna Invalid username or password.
+// Hint: && operator use karo.
+
+#include <iostream>
+#include<string>
+
+int main (){
+    std::string username = "admin";
+    int password = 12345;
+
+    std::cout << "enter Username: ";
+    std::cin>>username;
+
+    std::cout << "Enter Password: ";
+    std::cin>>password;
+
+    
+    if(username == "admin" && password == 12345){
+        std::cout << "Login successful ";
+    }
+    // else if(username !="admin" || password == 12345){
+    //     std::cout << "Invalid Username ";
+    // }
+    // else if (username =="admin" || password!=12345){
+    //     std::cout << "Invalid Paswword ";
+    // }
+    else {
+        std::cout << "Login fail try again ";
+    }
+
+    return 0;
+}
+    */
+//                                 Q5: Leap Year Checker in C++
+// Ek C++ program banao jo user se year input le aur bataye ke woh Leap Year hai ya nahi.
+// Requirements
+// 1. User se year input lo.
+// 2. Agar year 400 se divisible ho, toh leap year hai.
+// 3. Warna agar 100 se divisible ho, toh leap year nahi hai.
+// 4. Warna agar 4 se divisible ho, toh leap year hai.
+// 5. Baqi cases mein leap year nahi hai.
+#include <iostream>
+int main (){
+    int year;
+   // double leap = year % 400 == 0 ;
+    
+    std::cout << "enter Year:  ";
+    std::cin>>year;
+
+   if (year % 400 == 0 || year % 4 == 0 && year % 100 !=0 ){
+    std::cout << "its a leap year";
+   }
+   else {
+    std::cout << "Not a leap year";
+   }
+
     return 0;
 }
