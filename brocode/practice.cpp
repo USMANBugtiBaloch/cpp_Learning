@@ -766,8 +766,8 @@ int main (){
 */
 
 
-
-//4: Shopping Bill Calculator — User Input
+/*
+//                          3: Shopping Bill Calculator — User Input
 
 // Ab program ko aisa banao ke user khud prices aur quantities enter kare, aur program automatically total bill calculate kare.
 
@@ -779,18 +779,12 @@ int main (){
 // Mouse ki quantity
 // Headphones ki price
 // Headphones ki quantity
-
 // Phir program automatically calculate kare:
-
 // Har item ka total
 // Subtotal
 // 5% tax
 // Final bill
 
-// Tumhare rules
-// Prices ke liye double use karo.
-// Quantities ke liye int use karo.
-// Input ke liye std::cin use karo.
 #include <iostream>
 
 int main (){
@@ -835,5 +829,64 @@ int main (){
     std::cout  << "Total tax: "<< total_tax << " PKR" <<std::endl;
     std::cout << "Final Bill: "<< final_bill << " PKR" <<std::endl;
     
+    return 0;
+}
+    */
+//                                             Q5: Student Marks & Percentage Calculator 🎓
+
+// User se 5 subjects ke marks input lo:
+// 1. Computer Science
+// 2. Mathematics
+// 3. Physics
+// 4. English
+// 5. Pakistan Studies
+// Har subject ke total marks 100 hain.
+// Phir calculate karo:
+// - Obtained Marks: Sabhi 5 subjects ke marks ka sum.
+// - Total Marks: 500.
+// - Percentage: Obtained Marks ÷ Total Marks × 100.
+// Marks ke liye int use karo.
+// const int total_marks = 500; use karo.
+// Percentage ke liye double use karo.
+// User input ke liye std::cin use karo.
+// Abhi if/else aur loops use nahi karne.
+// Obtained Marks: Sabhi 5 subjects ke marks ka sum.
+// Total Marks: 500.
+// Percentage: Obtained Marks ÷ Total Marks × 100.
+
+#include <iostream>
+
+int main (){
+    int computerscience;
+    int mathematics;
+    int physics;
+    int english;
+    int PakistanStudies;
+  
+
+    std::cout <<"Enter Comuter Science Marks: ";
+    std::cin>>computerscience;
+
+    std::cout << "Enter Mathematics Marks: ";
+    std::cin>>mathematics;
+
+    std::cout<< "Enter Physics Marks: ";
+    std::cin>>physics;
+
+    std::cout << "Enter English Marks: ";
+    std::cin>>english;
+
+    std::cout << "Enter PakistanStudies Marks: ";
+    std::cin>>PakistanStudies;
+
+    
+    const int total_marks = 500;
+    int obtained_mark = computerscience + mathematics + physics + english + PakistanStudies;
+    double percentage = (static_cast<double>(obtained_mark) / total_marks * 100);
+
+    std::cout << "Obtained Marks: "<<obtained_mark<<std::endl;
+    std::cout << "Percentage: "<< percentage << "%" << std::endl;
+
+
     return 0;
 }
