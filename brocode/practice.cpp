@@ -1169,6 +1169,7 @@ int main (){
     return 0;
 }
     */
+   /*
 //                                 Q5: Leap Year Checker in C++
 // Ek C++ program banao jo user se year input le aur bataye ke woh Leap Year hai ya nahi.
 // Requirements
@@ -1194,3 +1195,40 @@ int main (){
 
     return 0;
 }
+    */
+
+    /*
+//                Q;6       Electricity Bill Calculator
+// Ab ek real-life programming problem solve karo.
+// C++ program banao jo user se electricity units input le aur bill calculate kare:
+// - 100 units tak: Rs. 5 per unit
+// - 101–200 units: Rs. 8 per unit
+// - 200 se zyada units: Rs. 10 per unit
+// Filhal simple rule: Saare units par usi rate se bill calculate karna jo selected range ka hai.
+
+#include <iostream>
+
+int main (){
+    int units;
+    
+    std::cout << "Enter units: ";
+    std::cin>>units;
+
+    if(units>=0 && units <=100){
+        std::cout << units *5<<std::endl;
+    }
+    else if(units>=101 && units <=200){
+        std::cout << units*8<<std::endl;
+    }
+    else if(units >200){
+        std::cout << units*10<<std::endl;
+    }
+    else{
+        std::cout << "invalid number"<<std::endl;
+        std::cout << "Try again ";
+    }
+        std::cout << "thanks"<<std::endl;
+
+    return 0;
+}
+    */
