@@ -832,6 +832,8 @@ int main (){
     return 0;
 }
     */
+
+    /*
 //                                             Q5: Student Marks & Percentage Calculator 🎓
 
 // User se 5 subjects ke marks input lo:
@@ -887,6 +889,71 @@ int main (){
     std::cout << "Obtained Marks: "<<obtained_mark<<std::endl;
     std::cout << "Percentage: "<< percentage << "%" << std::endl;
 
+
+    return 0;
+}
+    */
+   /*
+  // Math question:                        Square and Cube Calculator
+#include <iostream>
+
+int main (){
+    double x;
+
+    std::cout << "enter Number: ";
+    std::cin>>x;
+
+    double square = x*x;
+    double cube = x*x*x;
+    
+    std::cout << "Square: "<< square <<std::endl;
+    std::cout << "Cube: "<< cube << std::endl;
+
+    return 0;
+
+}
+*/
+/*
+                                        Q2:Absolute
+#include <iostream>
+#include<cmath>
+
+int main (){
+    double x;
+    
+    std::cout << "Enter Number: ";
+    std::cin>>x;
+
+    double absolute = std::abs(x);
+    std::cout << "Absolute: "<<absolute<<std::endl;
+
+    return 0;
+}
+    */
+   
+//                               Question 3: Rounding Calculator 🔢
+// Ab hum teen useful math functions practice karenge:
+// - std::round()
+// - std::floor()
+// - std::ceil()
+// Tumhara task
+// User se ek decimal number input lo aur uske teen results display karo.
+#include <iostream>
+#include <cmath>
+
+int main(){
+    double x;
+
+    std::cout << "Enter a number: ";
+    std::cin>>x;
+
+    double round_off = std::round(x);
+    double round_down = std::floor(x);
+    double round_up = std::ceil(x);
+
+    std::cout << "Round OFF: "<<round_off<<std::endl;
+    std::cout << "Round Down: "<< round_down<<std::endl;
+    std::cout << "Round UP: "<< round_up<<std::endl;
 
     return 0;
 }
