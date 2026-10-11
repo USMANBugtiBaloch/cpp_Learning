@@ -1063,7 +1063,7 @@ int main(){
     if (marks>100 || marks < 0){
         std::cout << "Invalid marks ";
     }
-    else if(marks>=90 && marks <=100 ){
+    else if(marks>=90 ){// && marks <=100
         std::cout << "Grade A ";
     }
     else if (marks>=80 && marks<90){
