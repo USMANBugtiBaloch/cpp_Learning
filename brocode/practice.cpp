@@ -1232,3 +1232,129 @@ int main (){
     return 0;
 }
     */
+   /*
+      //            SWITCH practice 
+     //                                      Q1. days in switch
+ #include <iostream>
+
+int main (){
+    int month;
+    
+    std::cout << "Enter your month: ";
+    std::cin>>month;
+
+    switch (month)
+    {
+        case  1:
+        std::cout << "Monday ";
+        break;
+        case 2:
+        std::cout << "Tuesday";
+        break;
+        case 3:
+        std::cout << "wednesday";
+        break;
+        case 4:
+        std::cout << "Thursday";
+        break;
+        case 5:
+        std::cout << "Friday";
+        break;
+        case 6:
+        std::cout << "Satureday";
+        break;
+        case 7:
+        std::cout << "Sunday";
+        break;
+
+    default:
+        std::cout << "Invalid Number please enter (1-7)"<<std::endl;
+        break;
+    }  
+
+    return 0;
+}
+    */
+//    Question 1 — Restaurant Billing System 🍔
+// Real-life example: Tum ek restaurant mein billing software bana rahe ho.
+// Program mein menu show karo:
+// ===== RESTAURANT MENU =====
+// 1. Burger   - Rs. 350
+// 2. Pizza    - Rs. 800
+// 3. Sandwich - Rs. 250
+// 4. Tea      - Rs. 100
+
+// Enter your choice:
+
+// Requirements:
+// - User se menu choice input lo.
+// - switch use karke item ki price select karo.
+// - User se quantity input lo.
+// - Total bill calculate karo.
+// - Invalid choice par error show karo.
+#include <iostream>
+#include <string>
+
+int main (){
+    int choice;
+    int quantity;
+    int price;
+    int total;
+    std::string item;
+
+    std::cout << "==== RESTAURANT MENU ===="<< std::endl;;
+    std::cout << "1. Burger      -Rs. 350"<<std::endl;
+    std::cout << "2. Pizza       -Rs. 800"<<std::endl;
+    std::cout << "3. Sandwich    -Rs. 250"<<std::endl;
+    std::cout << "4. Tea         -Rs. 100"<<std::endl;
+
+    std::cout << "Enter your choice: ";
+    std::cin>>choice;
+
+    std::cout << "Enter Quantity: ";
+    std::cin>>quantity;
+
+   std::cout << std::endl;
+   std::cout << "====== Bill ======="<<std::endl;
+
+   if(quantity <0){
+    std::cout << "Invilad Quantity!";
+    return 0;
+   }
+
+    switch(choice){
+         case 1:
+        price = 350;
+        item = "Burger ";
+            break;
+
+         case 2:
+        price = 800;
+        item = "Pizza ";
+        break;
+          
+         case 3: 
+        price = 250;
+        item = "Sandwich ";
+        break;
+
+         case 4: 
+        price = 100;
+        item = "Tea ";
+        break;
+        
+        default:
+        std::cout << "Error Please choice (1-4) ";
+        return 0;
+    }
+
+     total = price * quantity;
+     std::cout << "choice: "<< choice<<std::endl;
+     std::cout << "item: "<< item <<std::endl;
+     std::cout << "price: "<< price <<std::endl;
+     std::cout << "Quantity: "<< quantity<<std::endl;
+     std::cout << "Total bill: "<<  total<< std::endl;
+    
+
+    return 0;
+}
