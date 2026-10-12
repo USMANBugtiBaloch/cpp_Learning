@@ -12,7 +12,7 @@ I'm a **BS Computer Science student** learning C++ from the basics and improving
 * [x] Strings
 * [x] Namespaces
 * [x] User input (`cin`)
-* [ ] Conditional statements (`if`, `else`)
+* [x] Conditional statements (`if`, `else`)
 * [ ] Loops (`for`, `while`)
 * [ ] Functions
 * [ ] Arrays and strings
