@@ -2,7 +2,7 @@
 
 int main()
 /*
-{
+{   // if yur wan more string its in cplusplus.com website.
     //name.length
 
     std::string name;

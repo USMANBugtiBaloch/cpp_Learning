@@ -1488,3 +1488,96 @@ else {
    return 0;
 }
     */
+
+   //  Ternary
+
+//    #include <iostream>
+
+//     int main (){
+
+//     int age = 21;
+//     std::cout <<(age >=18 ? "You are adult. " : "you are miner ");
+
+//     return 0;
+//    }
+//                                          Q1. Even or Odd
+// - User se ek integer input lo.
+// - Ternary operator se check karo ke number even hai ya odd.
+// - Hint: % 2
+/*
+#include <iostream>
+
+int main (){    
+    
+    int num;
+    std::cout << "Enter your number: ";
+    std::cin>>num;
+
+    std::cout << (num %2 == 0 ? "even " : "odd" );
+    return 0;
+}
+        */            
+        //  Q2 .positive negative , zero
+// Number zero se bara ho → Positive
+// Number zero se chhota ho → Negative
+// Number zero ke barabar ho → Zero
+
+/*
+#include <iostream>
+
+int main (){
+    int num;
+    std::cout << "Enter your number: ";
+    std::cin>>num;
+   // condition1 ? result1 : (condition2 ? result2 : result3);        
+ 
+   std::cout << (num == 0? "zero" : (num > 0 ? "postive " : "Negative"));
+}
+*/
+
+//                                 Q3 — Voting Eligibility
+// Ismein nested ternary ki zaroorat nahi hai; simple ternary use karna hai.
+// Requirements:
+// 1. User se age input lo.
+// 2. Age 18 ya usse zyada ho → Eligible to Vote
+// 3. Age 18 se kam ho → Not Eligible to Vote
+    
+/*
+#include <iostream>
+int main (){
+    int age;
+    std::cout << "Enter your age For voting: ";
+    std::cin>>age;
+
+    std::cout << (age<=0? "Invalid input" : ( age > 17 ? "Eligible for vote" : "Not Eligible for vote" ));
+
+    return 0;
+    }
+*/
+//                                         Q4 — Find the Greater Number
+// Ab do numbers compare karne ki practice karo.
+// Requirements:
+// 1. User se do integers input lo: a aur b.
+// 2. Agar a > b ho, toh a print karo.
+// 3. Agar b > a ho, toh b print karo.
+// 4. Agar dono equal hon, toh Both numbers are equal print karo.
+#include <iostream>
+
+int main (){
+    int a;
+    int b;
+
+    std::cout << "Enter your 1s5 Number: ";
+    std::cin>>a;
+
+    std::cout << "Enter your 2nd Number: ";
+    std::cin >>b;
+if (a>b){
+std::cout <<a;
+}else if (b>a){
+    std::cout <<b;
+}
+    std::cout << (a==b? "Number are equal" : ( a>b? "Greater number is A"  : "Greater Number is B"));
+
+    return 0;
+}
