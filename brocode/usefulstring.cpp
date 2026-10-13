@@ -2,6 +2,9 @@
 
 int main()
 /*
+// fullname.at(0) — pehla character.
+// fullname.at(fullname.length() - 1) — aakhri character.
+// fullname.length() — total characters.
 {   // if yur wan more string its in cplusplus.com website.
     //name.length
 

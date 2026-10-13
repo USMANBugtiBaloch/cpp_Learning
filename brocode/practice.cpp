@@ -1561,6 +1561,7 @@ int main (){
 // 2. Agar a > b ho, toh a print karo.
 // 3. Agar b > a ho, toh b print karo.
 // 4. Agar dono equal hon, toh Both numbers are equal print karo.
+/*
 #include <iostream>
 
 int main (){
@@ -1572,12 +1573,136 @@ int main (){
 
     std::cout << "Enter your 2nd Number: ";
     std::cin >>b;
-if (a>b){
-std::cout <<a;
-}else if (b>a){
+    if (a>b){
+    std::cout <<a;
+    }else if (b>a){
     std::cout <<b;
-}
-    std::cout << (a==b? "Number are equal" : ( a>b? "Greater number is A"  : "Greater Number is B"));
+    }
+    std::cout << (a==b? "Number are equal" : ( a>b?  " is Greater number "  : " is Greater Number"));
 
+    return 0;
+}   */
+
+//                                                                Question 1: Login System 🔐
+// Ek simple C++ login system banao.
+// Requirements:
+// 1. User se username aur password input lo.
+// 2. Correct username admin hai.
+// 3. Correct password 12345 hai.
+// 4. Agar dono correct hon, print karo Login Successful.
+// 5. Agar koi ek bhi incorrect ho, print karo Invalid Username or Password.
+/*
+#include <iostream>
+
+int main (){   
+    std::string username;
+    int password;
+
+    std::cout << "Username: ";
+    std::cin>>username;
+
+    std::cout << "Password: ";
+    std::cin>>password;
+    if(username == "admin" && password ==12345){
+        std::cout << "Login Successful\n ";
+    }
+    else{
+        std::cout << "Login fail \n";
+    }
+
+    return 0;
+}
+    */
+    
+//                                     Question 1: Login Access Checker
+// Ek program banao jo user se poochhe ke kya woh banned hai.
+// Requirements:
+// 1. Ek bool variable banao: isBanned.
+// 2. User se input lo: 1 ka matlab banned, 0 ka matlab not banned.
+// 3. NOT operator ! use karo.
+// 4. Agar user banned nahi hai, toh print karo Access Granted.
+// 5. Agar user banned hai, toh print karo Access Denied.
+/*
+#include <iostream>
+int main (){
+    bool isbanned;
+   
+    std::cout << "Are you Banned (1=yes & 0=No): ";
+    std::cin>>isbanned;
+
+    if(!isbanned){
+        std::cout << "Access granted \n";
+    }
+    else {
+        std::cout << "Accuss Denied \n";
+    }
+    return 0;
+}
+    */
+
+//   //                              Question 1: Username Length Checker
+// Real-life example: Kisi website par user account bana raha hai.
+// Task:
+// 1. User se username input lo.
+// 2. .length() use karke username ke characters count karo.
+// 3. Agar username mein 5 se kam characters hon, toh Username is too short print karo.
+// 4. Warna Username accepted print karo.
+/*
+#include <iostream>
+#include <string>
+int main (){
+    std::string username;
+
+    std::cout << "Please Enter Username: ";
+    std::getline (std::cin,username);
+
+    if(username.length()>4){
+        std::cout << "username Accepted\n ";
+    }else{
+        std::cout << "Your username is too short \n";
+    }
+
+    return 0;
+}
+    */
+//                 //                Question 2: Student Name Character Checker
+// Ab .at() aur .length() ki practice karte hain.
+// Real-life example: University ke student registration system mein student ke naam ke characters check karna.
+// Requirements
+// 1. User se poora naam input lo.
+// 2. .at(0) use karke pehla character print karo.
+// 3. .at(username.length() - 1) ke concept ko use karke aakhri character print karo.
+// 4. Naam ke total characters bhi print karo.
+/*
+#include <iostream>
+#include <string>
+
+int main ()
+{   
+    std::string fullname;
+
+    std::cout << "Enter Your full name: ";
+    std::getline (std::cin ,fullname);
+
+    
+    std::cout << "first character is: " << fullname.at(0)<<std::endl;
+    std::cout<< "Last character is: " << fullname.at(fullname.length() - 1) <<std::endl;
+    std::cout << fullname.length() << std::endl;
+    return 0;
+}   */
+
+
+#include <iostream>
+#include <string>
+
+int main (){
+    std::string name = "Usmangamil@.com";
+
+    if(name.find("@")==std::string::npos){
+        std::cout << "name main nahi mila  \n";
+    }
+    else{
+        std::cout << "NAme mai hai  \n";
+    }
     return 0;
 }
