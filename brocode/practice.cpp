@@ -1361,6 +1361,7 @@ int main (){
 }
     */
 
+    /*
 //                                                Question 3: Mobile Banking Menu 🏦
 // Real-life situation: Tum ek bank ka simple ATM menu bana rahe ho.
 // Program ka menu
@@ -1447,3 +1448,4 @@ int main (){
 
     return 0;
 }
+*/
