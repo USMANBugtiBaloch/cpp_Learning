@@ -1275,7 +1275,9 @@ int main (){
     return 0;
 }
     */
-//    Question 1 — Restaurant Billing System 🍔
+
+   /*
+//                                          Question 2 — Restaurant Billing System 🍔
 // Real-life example: Tum ek restaurant mein billing software bana rahe ho.
 // Program mein menu show karo:
 // ===== RESTAURANT MENU =====
@@ -1317,7 +1319,7 @@ int main (){
    std::cout << std::endl;
    std::cout << "====== Bill ======="<<std::endl;
 
-   if(quantity <0){
+   if(quantity <=0){
     std::cout << "Invilad Quantity!";
     return 0;
    }
@@ -1354,7 +1356,94 @@ int main (){
      std::cout << "price: "<< price <<std::endl;
      std::cout << "Quantity: "<< quantity<<std::endl;
      std::cout << "Total bill: "<<  total<< std::endl;
-    
+
+    return 0;
+}
+    */
+
+//                                                Question 3: Mobile Banking Menu 🏦
+// Real-life situation: Tum ek bank ka simple ATM menu bana rahe ho.
+// Program ka menu
+// ===== ATM MENU =====
+// 1. Check Balance
+// 2. Deposit Money
+// 3. Withdraw Money
+// 4. Exit
+
+// Enter your choice:
+
+// Requirements
+// - Starting balance: 50000 rupees.
+// - 1 select karne par account balance show karo.
+// - 2 select karne par deposit amount input lo aur balance increase karo.
+// - 3 select karne par withdrawal amount input lo aur balance decrease karo.
+// - Agar withdrawal balance se zyada ho, toh Insufficient Balance show karo.
+// - Agar deposit ya withdrawal amount 0 ya negative ho, toh Invalid Amount show karo.
+// - 4 select karne par Thank you for using our ATM! show karo.
+// - Kisi aur number par Invalid choice! show karo.
+
+#include <iostream>
+
+int main (){
+    int choice;
+    int balance = 50000;
+    int deposit_money;
+    int withdraw_money;
+
+    std::cout << "==== ATM MENU ===="<<std::endl;
+    std::cout << "1. Check balance "<<std::endl;
+    std::cout << "2. Deposit Money "<<std::endl;
+    std::cout << "3. Withdraw Money "<<std::endl;
+    std::cout << "4. Exit "<<std::endl;
+
+    std::cout << "Enter your choice: ";
+    std::cin>>choice;
+
+    if(choice <=0){
+        std::cout << "Invalid Number pleace use(1-4)";
+        return 0;
+    }
+    switch(choice){
+        case 1:
+        std::cout << "Your Balance: "<<balance<<std::endl;
+        break;
+
+        case 2:
+        std::cout << "Enter Deposit money: ";
+        std::cin>>deposit_money;
+        if(deposit_money <=0){
+        std::cout << "Invalid Amount ";
+        return 0;
+        }
+        balance = deposit_money +balance;
+        std::cout << "Deposit succesfully "<<std::endl;
+        std::cout << "New balance: " << balance<<std::endl;
+        break;
+        
+        case 3:
+        std::cout << "Enter Wihtdraw amount: ";
+        std::cin>>withdraw_money;
+        if (withdraw_money <= 0) {
+    std::cout << "Invalid Amount";
+    return 0;
+        }
+        if (withdraw_money > balance) {
+    std::cout << "Insufficient Balance";
+    return 0;
+}
+        std::cout << "Wtihdraw succesfully "<<std::endl;
+        balance = balance - withdraw_money;
+        std::cout << "Remanining ammount: "<<balance<<std::endl;
+        break;
+
+        case 4:
+        std::cout << "Thank you for using our ATM! "<<std::endl;
+        return 0;
+
+        default:
+        std::cout << "Invalid number! ";
+        return 0;
+    }
 
     return 0;
 }
