@@ -1,7 +1,8 @@
 #include <iostream>
 
-int main(){
-
+int main()
+/*
+{
     //name.length
 
     std::string name;
@@ -18,4 +19,102 @@ int main(){
 
     return 0;
 
+}
+    */
+/*
+    {
+
+        // name.empty
+    std::string name;
+
+    std::cout << "Enter your name: ";
+    std::getline(std::cin,name);
+
+    if(name.empty()){
+        std::cout << "you didn't enter your name";
+    }
+    else {
+        std::cout << "Hello "<< name;
+    }
+
+}
+*/
+
+/*    {
+    //name.clear
+    std::string name;
+    std::cout << "Enter your name: ";
+    std::getline(std::cin,name);
+
+    name.clear();
+
+    std::cout << "hello "<< name;
+}
+*/
+
+   /* {
+    //name.append
+    std::string name;
+    std::cout << "Enter your name: ";
+    std::getline(std::cin,name);
+
+    name.append("@gamil.com");
+
+    std::cout << "Your username is now "<< name;
+    
+    return 0;
+}
+*/
+  /*  {
+    //name.at
+    std::string name;
+    std::cout << "Enter your name: ";
+    std::getline(std::cin,name);
+
+    std::cout << name.at(5);
+   
+    return 0;
+}
+    */
+/*
+ {
+    //name.insert()
+    std::string name;
+
+    std::cout << "Enter your name: ";
+    std::getline(std::cin,name);
+
+    name.insert(2, "@");
+
+    std::cout << name;
+   
+    return 0;
+}
+*/
+
+/*    {
+    //name.Find()
+    std::string name;
+
+    std::cout << "Enter your name: ";
+    std::getline(std::cin,name);
+
+   std::cout << name.find(' ');
+
+    //std::cout << name;
+   
+    return 0;
+}*/
+{
+    //name.Find()
+    std::string name;
+
+    std::cout << "Enter your name: ";
+    std::getline(std::cin,name);
+
+    name.erase (0 , 5);
+
+    std::cout << name;
+   
+    return 0;
 }
