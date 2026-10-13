@@ -1450,6 +1450,9 @@ int main (){
 }
 */
 
+/*
+
+//        Temperature conversion Fahrenheit to celsius
 #include <iostream>
 
 int main (){
@@ -1480,18 +1483,8 @@ else {
     std::cout << "please enter in only in C or F\n ";
 }
 
-
-
-
-
-
-
-
-
-
-    std::cout << "************************************ \n ";
-
-
-
-    return 0;
+   std::cout << "************************************ \n ";
+   
+   return 0;
 }
+    */
