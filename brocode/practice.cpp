@@ -1691,7 +1691,7 @@ int main ()
     return 0;
 }   */
 
-
+/*          //find something in name:
 #include <iostream>
 #include <string>
 
@@ -1705,4 +1705,203 @@ int main (){
         std::cout << "NAme mai hai  \n";
     }
     return 0;
+}
+*/
+
+// Q1. Number Counter
+// Ek program banao jo 1 se 10 tak numbers print kare.
+
+// #include <iostream>
+
+// int main(){
+//     int i=1;
+//     while(i<=10){
+//         std::cout << i<<std::endl;
+//         i++;
+//     }
+//     return 0;
+// }
+
+// check if there is a lower case or uppercase 
+
+// #include <iostream>
+
+// int main(){
+//      char ch;
+
+//      std::cout << "Enter your character: ";
+//      std::cin >> ch;
+
+//      if(ch >= 'a' && ch <= 'z'){
+//         std::cout << "Lowercase ";
+//      }
+//      else if(ch >= 'A' && ch <= 'Z'){
+//         std::cout << "Uppercase ";
+//      }
+//      else {
+//         std::cout << "Invalid please use characters \n";
+//      }
+
+//     return 0;
+// }
+/*
+// Question 2 — Countdown
+// Ek program banao jo 10 se 1 tak countdown kare aur phir Game Started! print kare.
+#include <iostream>
+int main (){
+
+    int countDown = 10;
+
+    while (countDown >=1){
+        std::cout << countDown<<std::endl;
+        countDown--;
+    }
+
+    std::cout << "GameStart ";
+
+    return 0;
+}   */
+
+/*
+// Question 3 — Sum calculator
+// Ek program banao jo 1 se 5 tak numbers ka sum calculate kare.
+
+#include <iostream>
+
+int main (){
+
+    int count=1;
+    int totalSum = 0;
+
+    while(count <=5){
+        
+        std::cout <<count <<std::endl;
+      
+        totalSum = totalSum+count;
+        count++;
+    }
+     
+    std::cout << totalSum;
+    return 0;
+}*/
+/*
+// Q1. Reverse Countdown
+// 10 se 1 tak numbers print karo.
+#include <iostream>
+
+int main (){
+    int countDown= 10;
+
+    while (countDown >=1){
+        std::cout << countDown << '\n';
+        countDown--;
+    }
+    std::cout << "Gamestart ";
+
+    return 0;
+}   */
+/*
+// Q2. Odd Numbers
+// 1 se 30 tak saare odd numbers print karo.
+
+#include <iostream>
+
+int main (){
+    int oddNumber = 1;
+
+    while (oddNumber <=30){
+        
+        std::cout  << oddNumber << " ";
+        oddNumber+=2;
+    }
+    std::cout << "Game";
+
+
+    return 0;
+}
+*/
+/*
+// Question: ATM PIN Verification
+// Ek program banao jo:
+// 1. Ek correct PIN 1234 store kare.
+// 2. User se PIN input le.
+// 3. while loop use karke user ko dobara PIN enter karne de jab tak correct PIN enter na ho.
+// 4. Correct PIN enter hone par Access Granted! print kare.
+// Hint: while loop ke saath std::cin use karna hoga.
+// Is baar khud code likho. Main tumhara code check karke bataunga ke tumhari logic sahi hai ya nahi.
+
+#include <iostream>
+
+int main(){
+    int connectPin = 1234;
+    int pin;
+    std::cout << "Enter PIN: ";
+    std::cin>>pin;
+    while(pin != connectPin){
+          std::cout << "Wrong pin Try again \n";    
+         std::cout << "Enter PIN: ";
+         std::cin>>pin;     
+    }
+
+    std::cout << "ACCUSS GRANTED ";
+    return 0;
+}
+*/
+// Question #3 — ATM Withdrawal System
+// Tumne while loop aur if conditions practice kar li hain. Ab ek real-life ATM problem solve karo.
+// Topics: Variables, double, std::cin, while, if-else, comparison operators.
+// 📝 Requirements
+// C++ program banao jo:
+// 1. Starting bank balance Rs. 50,000 ho.
+// 2. User se withdrawal amount input le.
+// 3. Agar amount 0 ya usse kam ho, toh Invalid amount! print kare.
+// 4. Agar amount balance se zyada ho, toh Insufficient balance! print kare.
+// 5. Agar amount valid ho aur balance ke andar ho, toh balance se amount subtract kare aur remaining balance show kare.
+// 6. User se pooche ke kya woh dobara withdrawal karna chahta hai.
+// 7. Jab user yes kahe, withdrawal process dobara chale. no kahe, toh program end ho jaye.
+
+#include <iostream>
+int main()
+{
+    int balance = 50000;
+    double withdrawal;
+    char choice = 'y';
+    
+    std::cout << "===== ATM ===== \n";
+    std::cout << "Enter withdrawal: ";
+    std::cin>>withdrawal;
+    
+    if(withdrawal <= 0 ){
+        std::cout << "invalid amount ";
+      
+    }
+    else if (withdrawal > balance){
+        std::cout << "Insufficient amount\n ";
+    }
+    else{
+     std::cout << "withdrawal successfull \n";
+    balance = balance - withdrawal;
+    std::cout << "Balance = " << balance<<"\n";
+    }
+        while (choice== 'Y'|| choice == 'y') {
+       
+            std::cout << "want again (Y/N): ";
+             std::cin>>choice;
+
+         std::cout << "Enter withdrawal: ";
+                 std::cin>>withdrawal;
+            
+         std::cout << "Balance = " << balance<<"\n";
+       
+
+         if (choice == 'N' || choice == 'n') {
+              std::cin>>choice;      
+          break;
+    
+      }
+    }
+
+     std::cout << "Thank you ";
+
+        return 0;
 }
