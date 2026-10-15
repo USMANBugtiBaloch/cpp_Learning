@@ -69,16 +69,36 @@ int main (){
     // cout << "student Fees: "<< studentfees <<endl;
   	// cout << "student Grade: " << studentGrade << endl;
 
-    int length = 5;
-    int width = 6;
+    // int length = 5;
+    // int width = 6;
 
-    int area = length * width;
+    // int area = length * width;
 
-    cout << "Length is: "<< length << endl;
-    cout << "Width is: " << width <<endl;
-    cout << "The area of rectangle is: "<< area <<endl;
+    // cout << "Length is: "<< length << endl;
+    // cout << "Width is: " << width <<endl;
+    // cout << "The area of rectangle is: "<< area <<endl;
+
+// user input 
+//  int x;
+//  cout << "Type a number: "; // Type a number and press enter
+//  cin >> x; // Get user input from the keyboard
+ // cout << "Your number is: " << x;
+
+//   int x;
+//   cout << "Enter a number: ";
+//   cin>>x;
+//   cout << "Your number is: "<<x;
 
 
+	int x, y,sum;
+   // int sum;
+    cout << "Enter x: ";
+    cin>>x;
+    cout<< "Enter y: ";
+    cin>>y;
+    sum = x + y;
+    
+    cout << "Sum of x and y: "<<sum<<endl;
 
 
 
