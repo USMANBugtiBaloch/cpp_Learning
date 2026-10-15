@@ -1861,47 +1861,43 @@ int main(){
 // 7. Jab user yes kahe, withdrawal process dobara chale. no kahe, toh program end ho jaye.
 
 #include <iostream>
+
 int main()
 {
-    int balance = 50000;
+    double balance = 50000.00;
     double withdrawal;
-    char choice = 'y';
-    
-    std::cout << "===== ATM ===== \n";
-    std::cout << "Enter withdrawal: ";
-    std::cin>>withdrawal;
-    
-    if(withdrawal <= 0 ){
-        std::cout << "invalid amount ";
-      
-    }
-    else if (withdrawal > balance){
-        std::cout << "Insufficient amount\n ";
-    }
-    else{
-     std::cout << "withdrawal successfull \n";
-    balance = balance - withdrawal;
-    std::cout << "Balance = " << balance<<"\n";
-    }
-        while (choice== 'Y'|| choice == 'y') {
-       
-            std::cout << "want again (Y/N): ";
-             std::cin>>choice;
+    char choice = 'Y';
 
-         std::cout << "Enter withdrawal: ";
-                 std::cin>>withdrawal;
-            
-         std::cout << "Balance = " << balance<<"\n";
-       
+    std::cout << "===== ATM SYSTEM =====\n";
 
-         if (choice == 'N' || choice == 'n') {
-              std::cin>>choice;      
-          break;
-    
-      }
+    while (choice == 'Y' || choice == 'y')
+    {
+        std::cout << "\nCurrent Balance: Rs. " << balance << "\n";
+
+        std::cout << "Enter withdrawal amount: Rs. ";
+        std::cin >> withdrawal;
+
+        if (withdrawal <= 0)
+        {
+            std::cout << "Invalid amount!\n";
+        }
+        else if (withdrawal > balance)
+        {
+            std::cout << "Insufficient balance!\n";
+        }
+        else
+        {
+            balance = balance - withdrawal;
+
+            std::cout << "Withdrawal successful!\n";
+            std::cout << "Remaining Balance: Rs. " << balance << "\n";
+        }
+
+        std::cout << "\nDo you want another withdrawal? (Y/N): ";
+        std::cin >> choice;
     }
 
-     std::cout << "Thank you ";
+    std::cout << "\nThank you for using our ATM!\n";
 
-        return 0;
+    return 0;
 }
