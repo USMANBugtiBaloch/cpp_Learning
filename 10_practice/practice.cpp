@@ -170,7 +170,7 @@ int main(){
 
 //                                           Q6 — Student Expense Tracker 💰
 
-// Imagine tum ek student ho.   
+// Imagine tum ek student ho.
 
 
 // Daily expenses:
@@ -410,7 +410,7 @@ std::cout << "CGPA: "<< cgpa << std::endl;
  //                                   Q4. Bank Account using typedef
 
  #include <iostream>
- 
+
 typedef int i;
 typedef std::string s;
 typedef double d;
@@ -449,7 +449,7 @@ int main(){
         std::cout << "Initial Balance: " << initial_balance << " " << currency << std::endl;
         std::cout << "Deposit: " << deposit << " " << currency << std::endl;
         std::cout << "Withdrawal: "<< withdrawal << " " <<  currency<< std::endl;
-        std::cout << "Final Balance: "<< final_balance << " " << currency << std::endl;  
+        std::cout << "Final Balance: "<< final_balance << " " << currency << std::endl;
 
         return 0;
     }
@@ -489,7 +489,7 @@ int main(){
     std::cout << "subtraction: "<< subtraction << std::endl;
     std::cout << "Multiplication: "<< multiplication << std::endl;
     std::cout << "Division: "<< division << std::endl;
-    std::cout << "Remainder: "<< remainder << std::endl; 
+    std::cout << "Remainder: "<< remainder << std::endl;
 
     return 0;
 }
@@ -522,7 +522,7 @@ int main (){
 
     std::cout << "Celsius: "<< celsius << std::endl;
     std::cout << "Fahrenheit: " << fahrenheit << std::endl;
-   
+
 }
     */
 
@@ -580,7 +580,7 @@ int main (){
     std::string item2 = "Mouse";
     std::string item3 = "Headphones";
 
-    const double tax = 5; 
+    const double tax = 5;
 
     double price1 = 2500.50;
     double price2 = 1200.75;
@@ -606,7 +606,7 @@ int main (){
     std::cout << "Subtotal: "<< subtotal << " PKR"<< std::endl;
     std::cout << "Tax: "<< total_tax<< " PKR" << std::endl;
     std::cout << "Final Bill: "<< final_bill << " PKR"<<std::endl;
-    
+
     return 0;
 }
     */
@@ -715,7 +715,7 @@ int main(){
     int substraction = a-b;
     int multiplication = a*b;
     double division = (static_cast<double>(a)/b);
-  
+
     std::cout<< "Addition: "<< addition << std::endl;
     std::cout << "Subtraction: "<< substraction << std::endl;
     std::cout << "Multiplication: "<< multiplication << std::endl;
@@ -814,7 +814,7 @@ int main (){
     std::cout << "Headphone Quantity: ";
     std::cin>>quantity3;
     std::cout << std::endl;
-    
+
     double total_price = price1*quantity1+price2*quantity2+price3*quantity3;
    // int total_quatity = quantity1 + quantity2 + quantity3;
     double subtotal = total_price * 1;//total_quatity;
@@ -828,7 +828,7 @@ int main (){
     std::cout << "Total Subtotal: "<< subtotal<< " PKR" <<std::endl;
     std::cout  << "Total tax: "<< total_tax << " PKR" <<std::endl;
     std::cout << "Final Bill: "<< final_bill << " PKR" <<std::endl;
-    
+
     return 0;
 }
     */
@@ -864,7 +864,7 @@ int main (){
     int physics;
     int english;
     int PakistanStudies;
-  
+
 
     std::cout <<"Enter Comuter Science Marks: ";
     std::cin>>computerscience;
@@ -881,7 +881,7 @@ int main (){
     std::cout << "Enter PakistanStudies Marks: ";
     std::cin>>PakistanStudies;
 
-    
+
     const int total_marks = 500;
     int obtained_mark = computerscience + mathematics + physics + english + PakistanStudies;
     double percentage = (static_cast<double>(obtained_mark) / total_marks * 100);
@@ -905,7 +905,7 @@ int main (){
 
     double square = x*x;
     double cube = x*x*x;
-    
+
     std::cout << "Square: "<< square <<std::endl;
     std::cout << "Cube: "<< cube << std::endl;
 
@@ -920,7 +920,7 @@ int main (){
 
 int main (){
     double x;
-    
+
     std::cout << "Enter Number: ";
     std::cin>>x;
 
@@ -931,7 +931,7 @@ int main (){
 }
     */
    /*
-   
+
 //                               Question 3: Rounding Calculator 🔢
 // Ab hum teen useful math functions practice karenge:
 // - std::round()
@@ -983,7 +983,7 @@ int main (){
     std::cin>>x;
     std::cout << "Enter Side B: ";
     std::cin>>y;
-    
+
   // x = pow(x,2);
   //  y = pow(y,2);
     c = sqrt(pow(x,2)+pow(y,2));
@@ -1104,8 +1104,8 @@ int main(){
 
 #include <iostream>
 
-int main (){    
-    
+int main (){
+
     double account_balance = 50000.0;
     double withdrawal;
 
@@ -1125,7 +1125,7 @@ int main (){
         std::cout << "Remaining Balance "<< account_balance <<std::endl;
         std::cout << "Thanks ";
     }
-    
+
  return 0;
 }
  */
@@ -1152,7 +1152,7 @@ int main (){
     std::cout << "Enter Password: ";
     std::cin>>password;
 
-    
+
     if(username == "admin" && password == 12345){
         std::cout << "Login successful ";
     }
@@ -1182,7 +1182,7 @@ int main (){
 int main (){
     int year;
    // double leap = year % 400 == 0 ;
-    
+
     std::cout << "enter Year:  ";
     std::cin>>year;
 
@@ -1210,7 +1210,7 @@ int main (){
 
 int main (){
     int units;
-    
+
     std::cout << "Enter units: ";
     std::cin>>units;
 
@@ -1233,13 +1233,13 @@ int main (){
 }
     */
    /*
-      //            SWITCH practice 
+      //            SWITCH practice
      //                                      Q1. days in switch
  #include <iostream>
 
 int main (){
     int month;
-    
+
     std::cout << "Enter your month: ";
     std::cin>>month;
 
@@ -1270,7 +1270,7 @@ int main (){
     default:
         std::cout << "Invalid Number please enter (1-7)"<<std::endl;
         break;
-    }  
+    }
 
     return 0;
 }
@@ -1334,17 +1334,17 @@ int main (){
         price = 800;
         item = "Pizza ";
         break;
-          
-         case 3: 
+
+         case 3:
         price = 250;
         item = "Sandwich ";
         break;
 
-         case 4: 
+         case 4:
         price = 100;
         item = "Tea ";
         break;
-        
+
         default:
         std::cout << "Error Please choice (1-4) ";
         return 0;
@@ -1420,7 +1420,7 @@ int main (){
         std::cout << "Deposit succesfully "<<std::endl;
         std::cout << "New balance: " << balance<<std::endl;
         break;
-        
+
         case 3:
         std::cout << "Enter Wihtdraw amount: ";
         std::cin>>withdraw_money;
@@ -1484,7 +1484,7 @@ else {
 }
 
    std::cout << "************************************ \n ";
-   
+
    return 0;
 }
     */
@@ -1507,8 +1507,8 @@ else {
 /*
 #include <iostream>
 
-int main (){    
-    
+int main (){
+
     int num;
     std::cout << "Enter your number: ";
     std::cin>>num;
@@ -1516,7 +1516,7 @@ int main (){
     std::cout << (num %2 == 0 ? "even " : "odd" );
     return 0;
 }
-        */            
+        */
         //  Q2 .positive negative , zero
 // Number zero se bara ho → Positive
 // Number zero se chhota ho → Negative
@@ -1529,8 +1529,8 @@ int main (){
     int num;
     std::cout << "Enter your number: ";
     std::cin>>num;
-   // condition1 ? result1 : (condition2 ? result2 : result3);        
- 
+   // condition1 ? result1 : (condition2 ? result2 : result3);
+
    std::cout << (num == 0? "zero" : (num > 0 ? "postive " : "Negative"));
 }
 */
@@ -1541,7 +1541,7 @@ int main (){
 // 1. User se age input lo.
 // 2. Age 18 ya usse zyada ho → Eligible to Vote
 // 3. Age 18 se kam ho → Not Eligible to Vote
-    
+
 /*
 #include <iostream>
 int main (){
@@ -1594,7 +1594,7 @@ int main (){
 /*
 #include <iostream>
 
-int main (){   
+int main (){
     std::string username;
     int password;
 
@@ -1613,7 +1613,7 @@ int main (){
     return 0;
 }
     */
-    
+
 //                                     Question 1: Login Access Checker
 // Ek program banao jo user se poochhe ke kya woh banned hai.
 // Requirements:
@@ -1626,7 +1626,7 @@ int main (){
 #include <iostream>
 int main (){
     bool isbanned;
-   
+
     std::cout << "Are you Banned (1=yes & 0=No): ";
     std::cin>>isbanned;
 
@@ -1678,13 +1678,13 @@ int main (){
 #include <string>
 
 int main ()
-{   
+{
     std::string fullname;
 
     std::cout << "Enter Your full name: ";
     std::getline (std::cin ,fullname);
 
-    
+
     std::cout << "first character is: " << fullname.at(0)<<std::endl;
     std::cout<< "Last character is: " << fullname.at(fullname.length() - 1) <<std::endl;
     std::cout << fullname.length() << std::endl;
@@ -1722,7 +1722,7 @@ int main (){
 //     return 0;
 // }
 
-// check if there is a lower case or uppercase 
+// check if there is a lower case or uppercase
 
 // #include <iostream>
 
@@ -1774,13 +1774,13 @@ int main (){
     int totalSum = 0;
 
     while(count <=5){
-        
+
         std::cout <<count <<std::endl;
-      
+
         totalSum = totalSum+count;
         count++;
     }
-     
+
     std::cout << totalSum;
     return 0;
 }*/
@@ -1810,7 +1810,7 @@ int main (){
     int oddNumber = 1;
 
     while (oddNumber <=30){
-        
+
         std::cout  << oddNumber << " ";
         oddNumber+=2;
     }
@@ -1838,9 +1838,9 @@ int main(){
     std::cout << "Enter PIN: ";
     std::cin>>pin;
     while(pin != connectPin){
-          std::cout << "Wrong pin Try again \n";    
+          std::cout << "Wrong pin Try again \n";
          std::cout << "Enter PIN: ";
-         std::cin>>pin;     
+         std::cin>>pin;
     }
 
     std::cout << "ACCUSS GRANTED ";

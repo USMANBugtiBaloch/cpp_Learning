@@ -39,7 +39,7 @@ int main() {
     cout<<"a1"<<endl;
 
 */
-    
+
 // int x = 5, y = 10;
 // cout << x+y<<endl;
 // cout<< x-y<<endl;
@@ -87,7 +87,7 @@ int main() {
 // cout<<a<<endl;
 // cout <<"area of cicle is :"<<endl;
 
-//simple interst 
+//simple interst
 
 //formula is p*r*t/100
 // cout <<"simple principle"<<endl;
@@ -105,7 +105,7 @@ int main() {
 // cout <<"Your simple interest is :";
 // cout<< si<<endl;
 
-//sum of 2 numbers 
+//sum of 2 numbers
 // int x,y;
 // cout <<"enter 1st number :";
 // cin>>x;
@@ -115,17 +115,17 @@ int main() {
 // cout <<x+y;
 // cout<<"\n";
 
-//square of number 
+//square of number
 // int x;
 // cout <<"enter 1st number :";
 // cin>>x;
 // cout << "Square of this number is :";
 // cout <<x*x<<"\n";
-// // cube of number 
+// // cube of number
 // cout <<"cube of the number is :";
 // cout <<x*x*x<<endl;
 
-// half of interger 
+// half of interger
 
 // int x;
 // cout<<"enter a number :";
@@ -163,14 +163,25 @@ int main() {
 
 // int to char
 
-int x;
-cin>>x;
-char ch =(char)x;
-cout <<ch<<endl;
+// int x;
+// cin>>x;
+// char ch =(char)x;
+// cout <<ch<<endl;
 
+// bool iscodingfun = true;
+// bool isfishthristy = false;
+// cout << iscodingfun <<endl;
+// cout << isfishthristy;
+
+// char myGrade = 'A';
+// cout << myGrade<<endl;
+
+
+	char a = 65, b =66 , c = 67;
+    cout << a;
+    cout << b;
+    cout << c;
 
 
         return 0;
-
-
 }
