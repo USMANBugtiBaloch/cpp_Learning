@@ -90,17 +90,74 @@ int main (){
 //   cout << "Your number is: "<<x;
 
 
-	int x, y,sum;
-   // int sum;
-    cout << "Enter x: ";
-    cin>>x;
-    cout<< "Enter y: ";
-    cin>>y;
-    sum = x + y;
+// 	int x, y,sum;
+//    // int sum;
+//     cout << "Enter x: ";
+//     cin>>x;
+//     cout<< "Enter y: ";
+//     cin>>y;
+//     sum = x + y;
     
-    cout << "Sum of x and y: "<<sum<<endl;
+//     cout << "Sum of x and y: "<<sum<<endl;
 
+//     int age;
+//    // string name;
+//     double height;
+//    //  string semester;
+//      string uniname,professor,name,semester;
+//         // string professor;
 
+//     cout << "Enter your age: ";
+//   cin>>age;
+    
+//     cout << "enter your name: ";
+//     cin>> name;
+    
+//     cout << "Enter your height: ";
+//     cin >> height;
+   
+//     cout << "enter your semester: ";
+//     cin>>semester;
+    
+//     cout << "Enter university name: ";
+//     cin>>uniname;
+
+//     cout << "Enter your professor name: ";
+//     cin>>professor;
+
+//     cout << "Your name is : "<<name <<endl 
+//     << "Your age is : "<<age <<endl
+//     << "Your hight is: "<< height <<endl
+//     << "semester: "<<semester <<endl
+//     << "University: "<<uniname <<endl
+//     << "Professor name: "<< professor << ".";
+
+    // int x,y,z;
+    // int sum,divide,minus,multiply;
+
+    // x=20,y=25,z=10;
+    // sum = x+y+z,divide = x/y/z, minus = x-y-z, multiply = x*y*z;
+
+    // cout << "sum: "<<sum <<endl 
+    // << "divide: "<<divide<<endl
+    // << "minus: "<< minus<<endl
+    // << "multiply : "<<multiply<<endl;
+
+     int x,y,z;
+    int sum,divide,minus,multiply;
+  //  x=20,y=25,z=10;
+  cout <<"Enter x: ";
+  cin>>x;
+  cout <<"Enter y: ";
+  cin>>y;
+  cout <<"Enter z: ";
+  cin>>z;
+    sum = x+y+z,divide = x/y/z, minus = x-y-z, multiply = x*y*z;
+
+    cout << "sum: "<<sum <<endl 
+    << "divide: "<<(double)divide<<endl
+    << "minus: "<< minus<<endl
+    << "multiply : "<<multiply<<endl;
 
 		return 0;
 
