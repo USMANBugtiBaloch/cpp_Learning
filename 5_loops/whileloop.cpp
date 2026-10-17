@@ -1,9 +1,9 @@
 #include <iostream>
-#include <string>
+//#include <string>
 
 int main (){
-
-int n =50;
+/*
+  int n =50;
   int count =1;
 
     while(count <=n){
@@ -13,14 +13,7 @@ int n =50;
      count++;
     }
 
-
-
-
-
-
-
-
-
+\
     // int count =1;
 
     // while(count <=5){
@@ -41,6 +34,43 @@ int n =50;
     // }
 
     // std::cout << "Hello "<<name;
+*/
+  // int classStduent = 40;
+  //   int count =1;
+  //   while(count <= classStduent){
+  //      std::cout << count << "\\";
+  //       count++;
+  //   }
+  /*
+  //  1 se 10 tak numbers print karo
+      int x = 1;
+      while(x <=10){
+       std:: cout << x << " " ;
+        x++;
+      }
+*/
+/*
+   //  10 se 1 tak ulta print karo
+      int number = 10;
+      while(number >=1){
+        std::cout << number << " ";
+        number--;
+      }
+*/
+   // 1 se 20 tak sirf even numbers print karo
+    int number = 1;
+    while(number <=20){
+       if(number % 2 ==0){
+      std::cout << number << " ";
+       }
+      number++;
+    }
+
+
+
+
+
+
 
     return 0;
 }
