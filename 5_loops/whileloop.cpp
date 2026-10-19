@@ -57,14 +57,54 @@ int main (){
         number--;
       }
 */
+/*
    // 1 se 20 tak sirf even numbers print karo
-    int number = 1;
-    while(number <=20){
-       if(number % 2 ==0){
-      std::cout << number << " ";
-       }
-      number++;
+
+  int i=1;
+  while(i <=20){
+    if(i %2 == 0){
+     std:: cout<< i <<" ";
     }
+    i++;
+  }
+*/
+/*
+  //1 se 100 tak ka sum nikalo
+
+int num = 1;
+int sum = 0;
+while(num <= 100){
+  sum = num+sum;
+  std::cout <<num<<std::endl;
+  num++;
+}
+std::cout << "Sum: "<<sum <<std::endl;
+*/
+
+//1 se 100 tak ka sum nikalo
+int i =1;
+int sum = 0;
+
+while(i <= 100){
+  sum = sum+i;
+  std::cout << i <<std::endl;
+  i++;
+}
+std::cout << sum <<std::endl;
+
+/*
+   //Kisi number ka table print karo (user se number lo)
+   int num;
+ std:: cout<< "Enter your num: ";
+ std:: cin>>num;
+
+ int i = 1;
+ while (i <=10){
+ std:: cout << num<< " x "<< i << " = " << num * i <<std::endl ;
+ i++;
+ }
+*/
+
 
 
 
