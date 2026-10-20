@@ -80,7 +80,7 @@ while(num <= 100){
 }
 std::cout << "Sum: "<<sum <<std::endl;
 */
-
+/*
 //1 se 100 tak ka sum nikalo
 int i =1;
 int sum = 0;
@@ -91,6 +91,7 @@ while(i <= 100){
   i++;
 }
 std::cout << sum <<std::endl;
+*/
 
 /*
    //Kisi number ka table print karo (user se number lo)
@@ -104,12 +105,41 @@ std::cout << sum <<std::endl;
  i++;
  }
 */
+/*
+int  n;
+std::cout << "Enter your nuber: ";
+std::cin>>n;
 
+int count = 0;
+while(n !=0){
+   n = n/10 ;
+ // std::cout << count;
+  count++;
+}
+std::cout << "Digital: "<< count <<std::endl;
 
+*/
 
+// #include <iostream>
+// using namespace std;
 
+// int main() {
+//     int n;
+//     cout << "Enter a number: ";
+//     cin >> n;
 
+//     int count = 0;
 
+//     while (n != 0) {
+    //     n = n / 10;
+    //     count++;
+    // }
+
+//     cout << "Digits = " << count << endl;
+//     return 0;
+// }
+
+      //    Number ke digits ka sum nikalo
 
 
     return 0;
