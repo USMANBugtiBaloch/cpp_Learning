@@ -148,7 +148,78 @@ int main()
         }
     } while (guessingNumber != 7);
     std::cout << "Correct guess Thank You : ";
-    std::cout << "==================\n ";
+    std::cout << "==================\n";
+//  Pactice questions are ..
+//  Square pattern
+//  Repeated numbers
+//  Increasing star triangle
+//  Number triangle
+//  Multiplication tables
+//  Reverse triangle
+//  Repeated-number triangle
+//  Multiplication grid
+    int row;
+    for (int i = 1; i <= 5; i++)
+    {
+        for (int j = 1; j <= i; j++)
+            std::cout << "*";
+        std::cout << std::endl;
+    }
+    std::cout << "==============\n";
+
+    for (int i = 1; i <= 5; i++)
+    {
+        for (int j = 1; j <= i; j++)
+            std::cout << j;
+        std::cout << std::endl;
+    }
+
+    std::cout << "==============\n";
+
+    for (int i = 1; i <= 5; i++)
+    {
+        for (int j = 1; j <= 5; j++)
+            std::cout << "*";
+        std::cout << std::endl;
+    }
+    std::cout << "==============\n";
+
+    for (int i = 1; i <= 5; i++)
+    {
+        for (int j = 1; j <= 10; j++)
+            std::cout << i << "x" << j << "= " << i * j << std::endl;
+
+        std::cout << std::endl;
+    }
+    std::cout << "==============\n";
+
+    for (int i = 1; i <= 5; i++)
+    {
+        for (int j = 5; j >= i; j--)
+            std::cout << "*";
+
+        std::cout << std::endl;
+    }
+    std::cout << "==============\n";
+
+    for (int i = 1; i <= 5; i++)
+    {
+        for (int j = 1; j <= i; j++)
+            std::cout << i;
+
+        std::cout << std::endl;
+    }
+    std::cout << "==============\n";
+
+    for (int i = 1; i <= 5; i++)
+
+    {
+        for (int j = 1; j <= 5; j++)
+            std::cout << i * j << " ";
+
+        std::cout << std::endl;
+    }
+    std::cout << "==============\n";
 
     return 0;
 }
