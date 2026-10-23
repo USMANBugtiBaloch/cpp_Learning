@@ -77,7 +77,8 @@ int main()
     return 0;
 }
 */
-
+/*
+ // coin head/tails
 #include <iostream>
 #include <ctime>
 #include <cstdlib>
@@ -98,7 +99,50 @@ int main ()
         std::cout << "tails! "<< std::endl;
     }
 
+    return 0;
+}
+*/
 
+#include <iostream>
+
+int main()
+{
+
+    int number;
+    int guess;
+    int tries =0;
+
+    srand(time(NULL));
+    number = (rand() % 100) + 1;
+
+    std::cout << "===== NUMBER GUESSING GAME =====\n";
+
+    do
+    {
+        std::cout << "ENTER  A GUESS (1-100): ";
+        std::cin >> guess;
+        tries++;
+
+
+        if (guess > number)
+        {
+            std::cout << " Too high! \n";
+        }
+        else if (guess < number)
+        {
+            std::cout << "Too low!\n";
+        }
+        else
+        {
+            std::cout << "CORRECT # of tries:  "
+                      << tries << '\n';
+        }
+
+
+    } while (guess != number);
+
+
+    std::cout << "===================\n";
 
     return 0;
 }
