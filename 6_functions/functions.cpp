@@ -162,6 +162,7 @@ int main()
     return 0;
 }
 */
+/*
 #include <iostream>
 
 bool isEven(int number)
@@ -178,5 +179,140 @@ int main()
 {
    std::cout << "10 is Even: " << isEven(10)<< std::endl;
    std::cout << "5 is Odd: " << isEven(5)<<std::endl;
+    return 0;
+}
+*/
+/*
+//using string to print name
+#include <iostream>
+#include <string>
+
+void name(std::string a)
+{
+
+    std::cout << "Ener you name! ";
+    std::cin >> a;
+    std::cout << "Hello " << a << std::endl;
+}
+
+int main()
+{
+    std::string username;
+    name(username);
+}
+*/
+/*
+//using function printing hello for 3 time just call the fuction
+#include <iostream>
+
+void greet()
+{
+    std::cout << "hello " << std::endl;
+}
+
+int main()
+{
+    greet();
+    greet();
+    greet();
+
+    return 0;
+}
+*/
+/*
+//fucntion with parameter
+#include <iostream>
+void printNumber(int number)
+{
+    for (int i = 1; i <= number; i++)
+        std::cout << i << std::endl;
+}
+
+int main()
+{
+
+    printNumber(10);
+    printNumber(25);
+    printNumber(100);
+
+    return 0;
+}*/
+/*
+//addition
+#include <iostream>
+
+int add(int a, int b)
+{
+    return a + b;
+}
+
+int main()
+{
+
+    int result;
+    result= add(5, 10);
+
+    std::cout << result;
+    return 0;
+}
+*/
+/*
+// even or odd
+#include <iostream>
+
+bool isodd(int number1);
+//   bool isodd(3);
+bool isEven(int number)
+{
+    if (number % 2 == 0)
+    {
+        std::cout << "Even" << std::endl;
+        return true;
+    }
+    else
+    {
+        std::cout << "odd\n";
+        return false;
+    }
+    // return 1;
+}
+
+int main()
+{
+
+    isEven(2);
+    isodd(3);
+
+    return 0;
+}
+// or
+bool isodd(int number1)
+{
+    if (!number1 % 2 == 0)
+    {
+        std::cout << "HEllo" << std::endl;
+        return true;
+    }
+    else
+    {
+        std::cout << "bye" << std::endl;
+        return false;
+    }
+    return 0;
+}
+*/
+// square of a number
+#include <iostream>
+int square(int number)
+{
+    std::cout << number * number << std::endl;
+    return 0;
+}
+
+int main()
+{
+    square(4);
+    // int result = number *number;
+    // std::cout << number << std::endl;
     return 0;
 }
