@@ -305,13 +305,14 @@ bool isodd(int number1)
 #include <iostream>
 int square(int number)
 {
-    std::cout << number * number << std::endl;
-    return 0;
+    return number * number;
 }
 
 int main()
 {
-    square(4);
+    int result = square(2);
+    std::cout << result << std::endl;
+
     // int result = number *number;
     // std::cout << number << std::endl;
     return 0;
