@@ -99,8 +99,8 @@ int main()
     return 0;
 }
 */
-
-// taking square using fucntion 
+/*
+// taking square using fucntion
 #include <iostream>
 void printSquare(int i)
 {
@@ -128,3 +128,55 @@ int main()
 
 //     return 0;
 // }
+*/
+/*
+// adding two number using function
+#include <iostream>
+
+void add(int a, int b){
+  int  result = a + b;
+    std::cout << "result = "<< result <<std::endl;
+}
+
+int main (){
+    add(10 , 20);
+    add(5 , 7);
+
+    return 0;
+}
+*/
+/*
+// adding two number using return
+#include <iostream>
+
+int add(int a, int b)
+{
+    return a + b;
+}
+
+int main()
+{
+    int result = add(50, 25);
+    std::cout << "result = " << result << std::endl;
+
+    return 0;
+}
+*/
+#include <iostream>
+
+bool isEven(int number)
+{
+    if (number % 2 == 0){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+
+int main()
+{
+   std::cout << "10 is Even: " << isEven(10)<< std::endl;
+   std::cout << "5 is Odd: " << isEven(5)<<std::endl;
+    return 0;
+}
