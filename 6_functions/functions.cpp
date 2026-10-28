@@ -301,6 +301,7 @@ bool isodd(int number1)
     return 0;
 }
 */
+/*
 // square of a number
 #include <iostream>
 int square(int number)
@@ -316,4 +317,138 @@ int main()
 
 
     return 0;
+}   */
+/*
+#include <iostream>
+
+int age()
+{
+    int age = 20;
+    std::cout << "Your are " << age << " year old" << std::endl;
+    return age;
 }
+
+void happy(std::string name)
+{
+    std::cout << "Happy birthda to " << name << std::endl;
+    std::cout << "Happy birthda to " << name << std::endl;
+    std::cout << "Happy birthda to " << name << " dear" << std::endl;
+    std::cout << "Happy birthda to " << name << std::endl;
+
+}
+
+int main()
+{
+    // int age = 20;
+    std::string name = "Usman";
+    happy(name);
+    age();
+
+    return 0;
+}
+*/
+/*
+#include <iostream>
+
+double square(double length);
+double cube(double length);
+
+int main()
+{
+    double length;
+    std::cout << " enter your square ";
+    std::cin >> length;
+    // double lenght1;
+    // std::cout << " enter your cube ";
+    // std::cin >> lenght1;
+    double area = square(length);
+    double volume = cube(length);
+    std::cout << " Area = " << area << std::endl;
+      std::cout << " cube = " << volume << std::endl;
+
+    return 0;
+}
+
+double square(double length)
+{
+   // double result = length * length;
+   // return result;
+   return length * length;
+}
+double cube(double length)
+{
+   // double result = length * length;
+   // return result;
+   return length * length * length;
+}
+*/
+/*
+//printing my name using function
+#include <iostream>
+
+std::string addingString(std::string string1, std::string string2);
+
+int main()
+{
+
+    std::string firstname = "Muhammad";
+    std::string lastname = "Usman";
+    // std::string fullname = firstname + " " + lastname;
+    // std::cout << fullname << std::endl;
+    std::string fullname = addingString(firstname, lastname);
+    std::cout << "Hello " <<fullname;
+
+    return 0;
+}
+std::string addingString(std::string string1, std::string string2)
+{
+    return string1 + " " + string2;
+}*/
+/*
+//overloaded function same name!
+#include <iostream>
+void bakePizza(std::string topping1);
+void bakePizza();
+
+int main(){
+
+    bakePizza("hot ");
+
+    return 0;
+}
+
+void bakePizza(){
+    std::cout << "here is your pizza! \n";
+}
+void bakePizza(std::string topping1){
+    std::cout << "here is your "<<topping1<< "pizza!";
+}
+    */
+/*
+    // practice function overloaded
+#include <iostream>
+#include <string>
+
+void display();
+void display (std::string name);
+void display (std::string name,int number);
+
+int main()
+{
+    display ();
+    display("Usman");
+    display("Usman",66);
+    return 0;
+}
+
+void display()
+{
+    std::cout << "Hello C++ " << std::endl;
+}
+void display(std::string name)
+{
+    std::cout << "Hello C++ "<< name << std::endl;
+}
+void display(std::string name,int number){
+    std::cout << "Hello C++ \n"<< name << '\n' << number;
+}*/
